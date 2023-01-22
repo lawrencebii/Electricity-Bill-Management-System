@@ -10,7 +10,7 @@ public class Conn {
     public  Conn(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-//            Name of database
+//            Name of database and password
             connection= DriverManager.getConnection("jdbc:mysql:///ebs","root","root");
             statement= connection.createStatement();
 
